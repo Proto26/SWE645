@@ -1,0 +1,247 @@
+/*
+Name: Prajwal Arvind Desai
+G Number: G01326781
+Assignment 1
+*/
+
+
+* {box-sizing: border-box;}
+/*font family same as university website*/
+body { 
+  margin: 0;
+  font-family: "Roboto Slab", Palatino Linotype, Palatino, serif;
+  background-image: linear-gradient(178deg, #e2d0bc, #ddc2af);
+}
+
+
+
+.menu {
+  	overflow: hidden;
+    padding: -3px 10px;
+    background-image: linear-gradient(47deg, #00682d, #ffc900);
+}
+
+.menu a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.menu a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #FFCC33;
+  color: black;
+}
+
+.menu a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.header-right {
+  float: right;
+}
+.req{
+  border: 5px solid #006633;
+  box-shadow: 5px 10px #ffc900;
+}
+
+.cnt{
+ 	padding-left: 60px;
+    background-color: #eff0e5;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+ }
+
+ .menuBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+  background: linear-gradient(325deg, #006633 60%, #FFCC33 60%);
+
+}
+
+.menuB {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menuB:hover {
+  background-color: #006633;
+  transition: 0.6s;
+}
+.para{
+	padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.ul-box{
+      overflow: hidden;
+      list-style-type: none;
+      width: 800px;
+}
+
+.li-box{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 45px 5px;
+    text-decoration: none;
+    margin: 16px;
+    width: 170px;
+    height: 120px;
+    background-color: #006633;
+    border-radius: 5%;
+    border-bottom-color:#FFCC33 ;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    transition: 0.6s;
+
+}
+
+.li-box:hover{
+    background-color: #FFCC33;
+    color: black;
+    border-bottom-color:#006633 ;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+  }
+
+
+.dis {
+  display: none;
+}
+
+.dis:target {
+  display: block;
+}
+
+.table-all{
+    margin-left: 170px;
+    height: 100px;
+    width: 500px;
+    margin-top: 120px;
+}
+
+.t_d{
+  text-align: center;
+    padding: 15px;
+    border-style: outset;
+}
+
+.t_h{
+  padding: 15px;
+  background-image: linear-gradient(200deg, #ffc900, transparent);
+  background-color: #006633;
+  border-style: outset;
+  
+}
+
+.ig{
+  height: 114px;
+  float: right;
+}
+
+.ftr{
+    overflow: hidden;
+    margin-top: 2px;
+    background-image: linear-gradient(206deg, #00682d, #ffc900);
+}
+.divide-r{
+    width: 50%;
+    float: right;
+}
+.divide-l{
+    width: 50%;
+}
+
+/*here Survey*/
+
+form {
+      background-image: linear-gradient(299deg, #00682d, #ffc900);
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+      
+        .form-box {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        
+        .form-box label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        .form-box input,
+        .form-box select,
+        .form-box textarea {
+            border: 2px solid #006633;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        .form-box input[type="radio"],
+        .form-box input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        .bt {
+              background-color: white;
+              border: 1px solid #777;
+              border-radius: 2px;
+              font-family: inherit;
+              font-size: 21px;
+              display: block;
+              width: 50%;
+              margin-top: 50px;
+              margin-bottom: 20px;
+              margin-left: 98px;       
+         }
+
+
+        .bt:hover {
+              background-color: #FFCC33;
+              transition: 0.6s;
+        }
+
+/*to here*/
+
+
+@media screen and (max-width: 500px) {
+  .menu a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}

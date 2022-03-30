@@ -1,0 +1,196 @@
+<!-- 
+Name: Prajwal Arvind Desai
+G Number: G01326781
+Assignment 1
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Survey Form</title>
+
+    <script>
+        function findCommonElement() {
+                    var a = 42;
+                    var userRaf = document.getElementById("raffle").value;
+                    var array=userRaf.split(",");
+                    // Loop for array1
+                    var set=0;
+                    for(let i = 0; i < array.length; i++) {
+                        if(a==array[i]){
+                            alert("Form Submitted! And guess what you won a free movie ticket!!");
+                            set=1;
+                            return;
+                        }
+                    }
+                    if(set==0){
+                        alert("Form Submitted!");
+                    }
+                   
+                }
+
+    </script>
+</head>
+
+<body>
+<!-- Menu Page starts here -->
+<div class="menu">
+	<img src="img/d2.png">
+  </div>
+
+<!-- Menu Page ends here -->
+
+<!-- Home Page starts here -->
+<div class="cnt" id="home">
+<h2 class="req">We value your feedback!</h2>
+
+<p class="para">We will use this questionnaire to make future visits better, so please do share your thoughts with us. Thank you.</p>
+
+<form id="form" onsubmit="return findCommonElement();">
+ 
+        <!-- Details  for all the form as per the req-->
+        <div class="form-box">
+            <label for="name" id="label-name"> *First name </label>
+            <input type="text" id="name" placeholder="Enter your user name" required autofocus />
+        </div>
+
+        <div class="form-box">
+            <label for="name" id="label-name"> *Last name </label>
+            <input type="text" id="name" placeholder="Enter your user name" required autofocus />
+        </div>
+      
+        <div class="form-box">
+            <label for="text" id="label-street"> *Street Adress </label>
+            <input type="text" id="street" placeholder="Enter street name" required />
+        </div>
+
+        <div class="form-box">
+            <label for="text" id="label-city"> *City </label>
+            <input type="text" id="city" placeholder="Enter city name" required />
+        </div>
+
+        <div class="form-box">
+            <label for="text" id="label-state"> *State </label>
+            <input type="text" id="state" placeholder="Enter State name" required />
+        </div>
+        <div class="form-box">
+            <label for="number" id="label-zip"> *Zip </label>
+            <input type="text" id="zip" placeholder="Enter Zip code" required />
+        </div>
+
+        <div class="form-box">
+            <label for="phone" id="label-phone"> *Phone Number  </label>
+            <input type="tel" id="phone" placeholder="123-45-678" required />
+        </div>
+
+        <div class="form-box">
+            <label for="email" id="label-email">*Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+  
+
+        <div class="form-box">
+            <label for="date" id="label-url">*Date</label>
+            <input type="date" id="url" placeholder="Enter Date of Survey" required />
+        </div>
+
+  
+        <div class="form-box">
+            <label>What do you like about the campus?</label>
+            
+            
+            <label>
+              <input type="checkbox" name="student">Students</label>
+            
+            <label>
+              <input type="checkbox"name="loc">Location</label>
+            
+            <label>
+                <input type="checkbox" name="campus">Campus</label>
+            
+            <label>
+                <input type="checkbox" name="atm">Atmosphere</label>
+            
+            <label>
+                <input type="checkbox" name="dr">Dorm rooms</label>
+            
+            <label>
+                <input type="checkbox" name="sports">Sports</label>
+        </div>
+
+
+        <div class="form-box">
+            <label>
+                How did you became interested in the University?
+            </label>
+ 
+            <label>
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Friends
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Telivision
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Internet
+            </label>
+            <label>
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Others
+            </label>
+        </div>
+
+
+        <div class="form-box">
+            <label for="role" id="label-role">
+                 Would you recommend this school to other prospective students?
+            </label>
+             
+            <select name="rec" id="rec">
+                <option value="vl">Very Likely</option>
+                <option value="l">Likely</option>
+                <option value="ul">Unlikely</option>
+            </select>
+        </div>
+
+        <div class="form-box">
+            <label for="text" id="label-raffle"> Enter at least ten comma separated numbers ranging from 1-100 to get a chance to win free movie tickets </label>
+            <input type="text" id="raffle" placeholder="Raffle" />
+        </div>
+
+        <div class="form-box">
+            <label for="comment">Any comments or suggestions</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here" /></textarea>
+        </div>
+  
+
+          <button class="bt" type="submit" value="submit" >Submit</button>
+          <button class="bt" type="reset" value="reset" >Cancel</button>
+    </form>
+
+</div>
+
+<br>
+<br>
+<!-- Home Page ends here -->
+
+<!-- Footer  with the link-->
+
+<footer>
+	<div class="ftr" >
+		<img class="ig" src="img/logo.png">
+	</div>
+</footer>
+<!-- Footer ends -->
+</body>
+</html>
